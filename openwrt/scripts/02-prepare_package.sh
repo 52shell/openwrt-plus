@@ -127,7 +127,7 @@ git clone https://$github/sbwml/luci-app-xunlei package/new/xunlei
 git clone --depth 1 https://$github/sbwml/luci-theme-argon.git package/new/luci-theme-argon
 
 # Mosdns
-git clone https://$github/sbwml/luci-app-mosdns -b v5 package/new/mosdns
+git clone https://$github/52shell/luci-app-mosdns-fakeip -b v5 package/new/mosdns
 
 # OpenAppFilter
 git clone https://$github/sbwml/OpenAppFilter --depth=1 package/new/OpenAppFilter
