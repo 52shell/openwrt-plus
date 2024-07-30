@@ -2,7 +2,7 @@
 
 # golang 1.22
 rm -rf feeds/packages/lang/golang
-git clone https://$github/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+git clone https://$github/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
 
 # node - prebuilt
 rm -rf feeds/packages/lang/node
@@ -180,3 +180,6 @@ git clone https://$github/sbwml/feeds_packages_utils_unzip feeds/packages/utils/
 
 # tcp-brutal
 git clone https://$github/sbwml/package_kernel_tcp-brutal package/kernel/tcp-brutal
+
+# watchcat - clean config
+true > feeds/packages/utils/watchcat/files/watchcat.config
