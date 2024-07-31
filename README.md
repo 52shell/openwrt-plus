@@ -7,7 +7,8 @@
 正常连网联网之后：
 
 mosdns：请选择自定义规则，默认端口`53`，请将 网络-dhcp/dns里的 端口修改为`任意` 并将`hosts和解析文件`里的`忽略解析文件`勾选
-请将自定义规则里的`forward_remote`的地址修改为你的 `sing-box`入站地址 默认应该`主路由:6666`
+
+请将自定义规则里的`forward_remote`的地址修改为你的 `sing-box`入站地址 默认应该`主路由:6666`，之后进行下面的脚本执行
 
 添加`白名单`即是直连
 
@@ -21,9 +22,8 @@ wget https://file.herozmy.com/File/router/openwrt/op.sh && bash op.sh
 脚本正常执行无报错，手动将命令写入：系统-启动项-本地启动脚本   exit 0 上方
 ```
 nohup  /usr/bin/sing-box run -c /etc/sing-box/config.json > /tmp/sbstart.log 2>&1
-
 ```
-
+完成以后，重启路由器
 ### NanoPi R4S/R5S/R5C & X86_64 固件下载:
 
 https://github.com/pmkol/openwrt-plus/releases
