@@ -21,7 +21,7 @@ wget https://file.herozmy.com/File/router/openwrt/op.sh && bash op.sh
 
 脚本正常执行无报错，手动将命令写入：系统-启动项-本地启动脚本   exit 0 上方
 ```
-nohup  /usr/bin/sing-box run -c /etc/sing-box/config.json > /tmp/sbstart.log 2>&1
+nohup  /usr/bin/sing-box run -c /etc/sing-box/config.json > /tmp/sbstart.log 2>&1 &
 nft -f /etc/nftables.conf
 ```
 完成以后，重启路由器
